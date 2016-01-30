@@ -1,0 +1,46 @@
+html, body {
+	width: 100%;
+	max-width: 100%;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+.bottomMenu{
+	background-color:#489029;
+	width: 100%;
+	color:#FFFFFF;
+	height: 30px;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+.bottomMenu div{
+	display:table-cell;
+	height: 100%;
+	float:left;
+	width:33%;
+	text-align: center;
+	line-height: 30px;
+}
+
+.bottomMenu a{
+	color:#FFFFFF;
+}
+
+.bottomMenu div:hover{
+	color:#1b5b8f;
+}
+.bottomMenu a:visited{
+	color:#FFFFFF;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+	.bottomMenu{
+		font-size:2em;
+		height:60px;
+	}
+	.bottomMenu div{
+		line-height:60px;
+	}
+}

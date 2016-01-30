@@ -1,0 +1,51 @@
+$mainColor:#489029;
+$linkColor:#1b5b8f;
+
+
+.header{
+	width:100%;
+	padding: 1%;
+	background-color:$mainColor;
+	padding-right:0;
+}
+body{
+	height:100vh;
+	margin:0;
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color:#F4EFEB;
+}
+li{
+	list-style: none;	
+}
+.contactsList{
+	font-weight:strong;
+}
+.category{
+	font-weight: bold;
+}
+.blank{
+	color: #F4EFEB
+}
+.Person{
+	background-color:#87BACC;
+	color:#FFFFFF;
+	margin: 1%;
+	width: 30%;
+	margin-left:10%
+
+}
+p{
+	padding-left:20%;
+}
+.name{
+	font-weight: bold;
+	padding-left: 10%;
+	color: $linkColor;
+}
+h3{
+	padding-left: 3%;
+	color: $mainColor;
+}
+h4{
+	padding-left: 5%
+}

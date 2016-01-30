@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KippApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag    'calendar', media: 'all', 'data-turbolinks-track' => true %>
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  
+</head>
+<body>
+<div class="header">
+<%= link_to image_tag('logo.png'), root_path %>
+</div>
+
+
+<h3>Upcoming Events</h3>
+<ul class = "events"><% @calendar_events.each do |event| %>
+	<li class = "event"><%= event.name %> at <%=event.place%> <p><%= event.description %> </p><%= event.time.getlocal.strftime ("Event on %m/%d/%Y at %I:%M%p")%></li>
+	<% end %>
+</ul>
+<h3>Past Events</h3>
+<ul class = "events"<% @past_events.each do |event| %>
+	<li class = "event"><%= event.name %> at<%= event.place%> <p><%= event.description %> </p><%= event.time.getlocal.strftime ("Event happened on %m/%d/%Y at %I:%M%p")%></li>
+	<% end %>
+</ul>
+
+</body>
+</html>

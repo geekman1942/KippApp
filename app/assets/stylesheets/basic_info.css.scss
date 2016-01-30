@@ -1,0 +1,20 @@
+$mainColor:#489029;
+$linkColor:#1b5b8f;
+
+
+.header{
+	width:100%;
+	padding: 1%;
+	background-color:$mainColor;
+	padding-right:0;
+}
+body{
+	height:100vh;
+	margin:0;
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color:#F4EFEB;
+}
+.info{
+	width:50%;
+	height:25%;
+}
