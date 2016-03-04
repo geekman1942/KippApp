@@ -20,9 +20,10 @@ html, body {
 	display:table-cell;
 	height: 100%;
 	float:left;
-	width:33%;
+	width:25%;
 	text-align: center;
 	line-height: 30px;
+	text-decoration: none;
 }
 
 .bottomMenu a{

@@ -13,7 +13,9 @@
 <div class="header">
 <%= link_to image_tag('logo.png'), root_path %>
 </div>
-
+<%= month_calendar do |date| %>
+  <%= date %>
+<% end %>
 
 <h3>Upcoming Events</h3>
 <ul class = "events"><% @calendar_events.each do |event| %>

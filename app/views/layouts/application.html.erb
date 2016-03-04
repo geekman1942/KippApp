@@ -16,6 +16,7 @@
 	<%= link_to("<div><i class='fa fa-home'></i> Home</div>".html_safe, controller:"homepage", action:"index") %>
 	<a href="http://www.kippbayarea.org/"><div><i class="fa fa-globe"></i> Website</div></a>
 	<%= link_to("<div><i class='fa fa-phone'></i> Contact</div>".html_safe, controller:"contact", action: "index")%>
+	<%= link_to('Login', new_user_session_path)  %>
 </div>
  <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>

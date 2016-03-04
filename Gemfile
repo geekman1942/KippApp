@@ -39,3 +39,4 @@ gem 'spring',        group: :development
 gem 'activerecord-session_store'
 gem 'devise'
 gem 'pg'
+gem "simple_calendar", "~> 2.0"
