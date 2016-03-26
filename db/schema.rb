@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160203014733) do
+ActiveRecord::Schema.define(version: 20160318234948) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,12 +23,24 @@ ActiveRecord::Schema.define(version: 20160203014733) do
   end
 
   create_table "contacts", force: true do |t|
-    t.string   "name"
-    t.string   "phone_number"
     t.string   "email"
-    t.integer  "contact_category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "title"
+    t.string   "company"
+    t.string   "address_1"
+    t.string   "address_2"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip"
+    t.string   "home_phone"
+    t.string   "office_phone"
+    t.string   "cell_phone"
+    t.string   "fax"
+    t.string   "assistant"
+    t.string   "assistant_email"
   end
 
   create_table "events", force: true do |t|

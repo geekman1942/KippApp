@@ -1,3 +1,3 @@
 class Contact < ActiveRecord::Base
-	belongs_to :contact_category
+	acts_as_copy_target
 end
