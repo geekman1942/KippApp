@@ -7,7 +7,7 @@
 
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  
+
 </head>
 <body>
 <div class="header">
@@ -16,66 +16,25 @@
 
 </div>
 <h3>Contacts</h3>
-<ul class="contactsList">
-	<!--<% @category_list.each do |category| %>-->
-	<li class ="category"><!--<%= category.name %></li>-->
-	<li>
-		<ul class = "contacts"><!--<% category.contacts.order('name').each do |contact| %>-->
-			<li class = "contact"><p><!--<%= contact.name %></p> <p><%= contact.email %>--></p></li>
-			<!--<% end %>-->
-		</ul>
-	</li>	
-	<!--<% end %>-->
-</ul>
+
 <h4>Board</h4>
 
-<p class ="blank">blank</p>
-<div class="Person">
-<p class="name">Chuck Daggs (Vice Chair)</p>
-<p>	Executive Vice President</p>
-<p>	Wells Fargo</p>
-<p class ="empty">blank</p>
-<p>	Wells Fargo</p>
-<p>	Wealth Managment Group</p>
-<p>	420 Montgomery Street, 5th Floor</p>
-<p>	San Francisco, CA 94105</p>
-<p class ="empty">blank</p>
-<p>	(415)-222-4158 (Office)</p>
-<p class ="empty">blank</p>
-<p>	daggsc@welsfargo.com</p>
-<p>	Assistant: Stephanie Schultz</p>
-<p>	Stephanie.A.Schultz@wellsfargo.com</p>
-</div>
-<h1 class ="blank">Blank space</h1>
-<div class="Person">
-<p class="name">Cheryl Frank</p>
-<p>	Managing partner</p>
-<p> Capital Group</p>
-<p class ="empty">blank</p>
-<p> Capital Group</p>
-<p> 1 Market Street, Steuart Tower, Suite 2000</p>
-<p>	San Francisco, CA 94105</p>
-<p class ="empty">blank</p>
-<p>	(415)-601-6472 (Cell)</p>
-<p>	(415)-646-7640 (Work)</p>
-<p>	(415)-742-7640 (Home)</p>
-<p class ="empty">blank</p>
-<p>	cheryl.frank@gmail.com</p>
-<p>	Assistant: Diana Kung</p>
-<p>	diana.kung@capitalinternational.com</p>
-</div>
-<h1 class ="blank">Blank space</h1>
-<div class="Person">
-<p class="name">Jenny Shimizu Risk</p>
-<p>	660 West Santa Inez Avenue</p>
-<p>	Hillsborough, CA 94010</p>
-<p class ="empty">blank</p>
-<p>	(650)-458-0390 (Home)</p>
-<p>	(650)-678-9057 (Cell)</p>
-<p class ="empty">blank</p>
-<p>	jennyrisk@mac.com</p>
-</div>
-<h1 class ="blank">Blank space</h1>
-<h1 class ="blank">Blank space</h1>
+<% @contacts.each do |contact| %>
+  <div class = "Person">
+    <p class = "name"><%= contact.first_name %> <%= contact.last_name %></p>
+    <p><%= contact.title %></p>
+    <p><%= contact.company %></p>
+    <p><%= contact.address_1 %> <%= contact.city %> <%= contact.state %> <%= contact.zip %></p>
+    <p><%= contact.address_2 %></p>
+    <p><%= contact.home_phone %></p>
+    <p><%= contact.office_phone %></p>
+    <p><%= contact.cell_phone %></p>
+    <p><%= contact.fax %></p>
+    <p><%= contact.email %></p>
+    <p><%= contact.assistant %></p>
+    <p><%= contact.assistant_email %></p>
+  </div>
+<% end%>
+
 </body>
 </html>

@@ -1,7 +1,7 @@
 class ContactController < ApplicationController
 
 	def index
-		@category_list = ContactCategory.all
+		@contacts = Contact.all
 	end
 
 end
